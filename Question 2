@@ -1,0 +1,18 @@
+Algorithm: MergeSortedLists(L1, L2)
+
+1. Start
+2. Create an empty list called MERGED.
+3. Set P = L1 and Q = L2.
+4. Repeat while P != NULL and Q != NULL:
+      a. If P.data < Q.data:
+            Add P.data to MERGED
+            Move P to the next node
+      b. Otherwise:
+            Add Q.data to MERGED
+            Move Q to the next node
+5. If P != NULL:
+      Add all remaining nodes of P to MERGED.
+6. If Q != NULL:
+      Add all remaining nodes of Q to MERGED.
+7. Return MERGED.
+8. Stop
